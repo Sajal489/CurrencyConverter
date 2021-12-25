@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currencyconverter.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/My_Programs/Java/ExtraSpace/CurrencyConverter/src/currencyconverter/outrun-vaporwave-hd-wallpaper-preview.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="336.0" layoutY="40.0" text="Currency Converter" textFill="#02a14c">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="167.0" text="From:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="currentCurrencyField" layoutX="285.0" layoutY="166.0" prefHeight="25.0" prefWidth="115.0" />
+      <ComboBox fx:id="startCur" layoutX="100.0" layoutY="167.0" prefHeight="26.0" prefWidth="162.0" />
+      <Label layoutX="583.0" layoutY="162.0" prefHeight="31.0" prefWidth="40.0" text="To:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="changecurrencyField" editable="false" layoutX="829.0" layoutY="165.0" prefHeight="26.0" prefWidth="115.0" />
+      <ComboBox fx:id="endCur" layoutX="651.0" layoutY="165.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button fx:id="convertButton" layoutX="471.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleConvertAction" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: #FF00FF;" text="Convert">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="emptyerror" layoutX="299.0" layoutY="204.0" text="Field is empty" textFill="RED" visible="false" />
+      <Label fx:id="numbererror" layoutX="417.0" layoutY="171.0" text="Must enter a number" textFill="RED" visible="false" />
+      <Label fx:id="selecterror1" layoutX="125.0" layoutY="144.0" text="Select a Currency" textFill="RED" visible="false" />
+      <Label fx:id="selecterror2" layoutX="686.0" layoutY="144.0" text="Select a Currency" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
